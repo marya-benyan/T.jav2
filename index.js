@@ -40,3 +40,10 @@ alert(`Your ${orderName} is getting prepared.`);
 
 // Console print
 console.log(`${name} has ordered a ${orderName} (${orderType}).`);
+
+   // user info 
+   let user_info=[name,gender,orderType,orderName];
+
+   for (let i = 0; i < user_info.length; i++) {
+   console.log(user_info[i]);
+}

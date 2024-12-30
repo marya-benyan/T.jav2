@@ -34,34 +34,40 @@
     // }
     // alert(numbers); 
 
-    // Q4
-    // let number = prompt("Please enter a number between 0 and 100:");
-    // if (number < 0 || number > 100) {
-    //     alert("Invalid number! Please enter a number between 0 and 100.");
-    //     number = prompt("Please enter a valid number between 0 and 100:");
-    // }
-    // else {
-    //     alert(`You entered a valid number: ${number}`);
-    // }
+
+//Q4
+
+let number;
+
+while (true) {
+    number = prompt("Please enter a number between 0 and 100:");
+
+    if (number >= 0 && number <= 100) {
+        alert(`You entered a valid number: ${number}`);
+    } else {
+        alert("Invalid number! Please enter a number between 0 and 100.");
+    }
+}
+
 
 // Q5
 // طلب عدد صحيح من المستخدم
 
-let number = parseInt(prompt("Please enter an integer:"));
-// التحقق من أن الرقم المدخل هو عدد صحيح
-if (isNaN(number) || number < 0) {
-    alert("Please enter a valid positive integer.");
-} else {
-    let sum = 0; // متغير لتخزين المجموع
+// let number = parseInt(prompt("Please enter an integer:"));
+// // التحقق من أن الرقم المدخل هو عدد صحيح
+// if (isNaN(number) || number < 0) {
+//     alert("Please enter a valid positive integer.");
+// } else {
+//     let sum = 0; // متغير لتخزين المجموع
 
-    // حلقة لحساب مجموع الأرقام من 0 إلى الرقم المدخل
-    for (let i = 0; i <= number; i++) {
-        sum += i;
-    }
+//     // حلقة لحساب مجموع الأرقام من 0 إلى الرقم المدخل
+//     for (let i = 0; i <= number; i++) {
+//         sum += i;
+//     }
 
     // عرض النتيجة
-    alert(`The sum of integers from 0 to ${number} is: ${sum}`);
-}
+//     alert(`The sum of integers from 0 to ${number} is: ${sum}`);
+// }
 
 // // طلب عدد صحيح من المستخدم
 // let number = parseInt(prompt("Please enter an integer:"));
