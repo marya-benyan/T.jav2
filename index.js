@@ -47,3 +47,32 @@ console.log(`${name} has ordered a ${orderName} (${orderType}).`);
    for (let i = 0; i < user_info.length; i++) {
    console.log(user_info[i]);
 }
+
+// تحديد العنصر
+const userInfoDiv = document.getElementById("user-info");
+
+// إنشاء عناصر جديدة
+const mainDiv = document.createElement("div");
+const nameParagraph = document.createElement("p");
+const ol = document.createElement("ol");
+const genderLi = document.createElement("li");
+const ageLi = document.createElement("li");
+const orderLi = document.createElement("li");
+
+// تعبئة البيانات
+nameParagraph.textContent = "Marya";
+genderLi.textContent = "Gender: Female";
+ageLi.textContent = "Age: 19";
+orderLi.textContent = "Order: zenger";
+
+// إضافة العناصر إلى القائمة
+ol.appendChild(genderLi);
+ol.appendChild(ageLi);
+ol.appendChild(orderLi);
+
+// إضافة الفقرة والقائمة إلى العنصر الرئيسي
+mainDiv.appendChild(nameParagraph);
+mainDiv.appendChild(ol);
+
+// إضافة العنصر الرئيسي إلى div
+userInfoDiv.appendChild(mainDiv);
