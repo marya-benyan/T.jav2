@@ -6,7 +6,57 @@
     <title>order</title>
 </head>
 <body>
-    <div id="user-info"></div>
+    <!-- <div id="user-info"></div> -->
+    <form id="userForm">
+        <div>
+            <label for="name">User Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+        </div>
+        <br>
+        <div>
+            <label for="age">User Age</label>
+            <input id="age" type="number" placeholder="Enter your age" required>
+        </div>
+        <br>
+        <h2>Gender:</h2>
+        <div>
+            <input id="male" type="radio" value="male" name="gender">
+            <label for="male">Male</label>
+        </div>
+        <div>
+            <input id="female" type="radio" value="female" name="gender">
+            <label for="female">Female</label>
+        </div>
+        <br>
+        <h2>Order Name:</h2>
+        <div>
+            <input id="shawarma" type="checkbox" value="shawarma" name="ordername">
+            <label for="shawarma">Shawarma</label>
+        </div>
+        <div>
+            <input id="zenger" type="checkbox" value="zenger" name="ordername">
+            <label for="zenger">Zenger</label>
+        </div>
+        <div>
+            <input id="burger" type="checkbox" value="burger" name="ordername">
+            <label for="burger">Burger</label>
+        </div>
+        <br>
+        <h2>Order Type:</h2>
+        <div>
+            <input id="combo" type="radio" value="Combo" name="orderType">
+            <label for="combo">Combo</label>
+        </div>
+        <div>
+            <input id="sandwich" type="radio" value="Sandwich" name="orderType">
+            <label for="sandwich">Sandwich</label>
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <p id="user-info"></p>
+    <p id="output"></p>
 </body>
 <script src="index.js"></script>
 </html>
